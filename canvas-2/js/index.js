@@ -26,8 +26,8 @@ const spitfireImg = new Image();
 const supermanImg = new Image();
 
 // "src" has to dot/point as the image is used in HTML file
-spitfireImg.src = "./images/spitfire.png";
-supermanImg.src = "./images/superman.png";
+spitfireImg.src = "/images/spitfire.png";
+supermanImg.src = "/images/superman.png";
 
 let spitfireX = 800;
 let spitfireY = 200;
@@ -137,7 +137,7 @@ function gameOver(){
   // create tired-superman image
   const tiredSupermanImg = new Image();
   // point to the src where is the image itself
-  tiredSupermanImg.src = "./images/superman-hurt.png";
+  tiredSupermanImg.src = "/images/superman-hurt.png";
   tiredSupermanImg.onload = function(){
     ctx.drawImage(tiredSupermanImg, 480, 300, 150, 150);
   }
